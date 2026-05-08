@@ -1,0 +1,19 @@
+{
+  "name": "backend-pndrbhn",
+  "version": "1.0.0",
+  "description": "Backend PandaRebahan with Midtrans and RajaOngkir",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Doni Irawan",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "midtrans-client": "^1.3.4"
+  }
+}

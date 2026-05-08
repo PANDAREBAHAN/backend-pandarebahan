@@ -1,15 +1,16 @@
 {
   "version": 2,
   "builds": [
-    {
-      "src": "server.js",
-      "use": "@vercel/node"
-    }
+    { "src": "server.js", "use": "@vercel/node" },
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "css/*.css", "use": "@vercel/static" },
+    { "src": "pages/*.html", "use": "@vercel/static" },
+    { "src": "assets/**", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
+    { "src": "/cek-ongkir", "dest": "server.js" },
+    { "src": "/buat-transaksi", "dest": "server.js" },
+    { "src": "/buat-resi", "dest": "server.js" },
+    { "src": "/(.*)", "dest": "/$1" }
   ]
 }
